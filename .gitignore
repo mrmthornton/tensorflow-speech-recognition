@@ -6,6 +6,4 @@ __pycache__
 *.tar
 */*.tar
 
-logs/
-OLD/
-node_modules/
+data/spoken_numbers_pcm/
