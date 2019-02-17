@@ -29,7 +29,7 @@ model.fit(X, Y,n_epoch=3,show_metric=True,snapshot_step=100)
 # Overfitting okay for now
 
 demo_file = "5_Vicki_260.wav"
-demo=speech_data.load_wav_file(speech_data.path + demo_file)
-result=model.predict([demo])
-result=numpy.argmax(result)
+demo = speech_data.load_wav_file(speech_data.path + demo_file)
+result_vector = model.predict([demo])
+result = numpy.argmax(result_vector)
 print("predicted digit for %s : result = %d "%(demo_file,result))
