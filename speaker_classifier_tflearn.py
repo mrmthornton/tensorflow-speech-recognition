@@ -12,9 +12,10 @@ import speech_data as data
 # 'predicted speaker for 9_Vicki_260 : result = ', 'Vicki'
 import tensorflow as tf
 print("You are using tensorflow version "+ tf.__version__) #+" tflearn version "+ tflearn.version)
-if tf.__version__ >= '0.12' and os.name == 'nt':
-	print("sorry, tflearn is not ported to tensorflow 0.12 on windows yet!(?)")
-	quit() # why? works on Mac?
+print("os version is " + os.name)
+#if tf.__version__ >= '0.12' and os.name == 'nt':
+#	print("sorry, tflearn is not ported to tensorflow 0.12 on windows yet!(?)")
+#	quit() # why? works on Mac?
 
 speakers = data.get_speakers()
 number_classes=len(speakers)
